@@ -61,6 +61,10 @@ button {
   text-transform: uppercase;
 }
 
+label {
+  font-size: 14px;
+}
+
 .card_container {
   width: calc(100% - 100px);
   margin: auto;
@@ -69,16 +73,25 @@ button {
   overflow: hidden;
   border: 1px solid #515151;
   display: flex;
+  position: relative;
 }
 .card_container-image {
   width: 40%;
 }
 .card_container-image img {
   width: 100%;
-  height: 100%;
   display: block;
   -o-object-fit: cover;
      object-fit: cover;
+}
+.card_container-image label {
+  padding: 10px 20px;
+  position: absolute;
+  left: 25px;
+  bottom: 0;
+  color: #fff;
+  background-color: #154775;
+  text-transform: capitalize;
 }
 .card_container-content {
   width: 60%;
@@ -86,13 +99,11 @@ button {
   position: relative;
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 30px;
 }
 .card_container-content-title {
   display: flex;
   justify-content: space-between;
-  align-content: center;
-  align-items: center;
 }
 .card_container-content-title-price p:first-child {
   font-size: 13px;
