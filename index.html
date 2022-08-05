@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,6 +8,7 @@
     <title>cards-layout</title>
     <link rel="stylesheet" href="style/main.css">
 </head>
+
 <body>
     <!-- card design -->
     <figure class="card_container">
@@ -42,8 +44,28 @@
                 <a class="card_container-content-footer-active" href="#model"><button>Schedule a tour</button></a>
             </div>
         </figcaption>
-    
     </figure>
+    <div id="model_open" class="model_window">
+        <div class="model_window-form">
+            <div class="model_window-form-title">
+                <h3>Request more Information</h3>
+                <a class="close" href=""><i class="fa-solid fa-xmark"></i></a>
+            </div>
+            
+
+            <input class="input-value" type="text" placeholder="First Name">
+            <input type="text" placeholder="Last Name">
+            <input type="email" placeholder="Email address">
+            <input type="number" placeholder="Phone Number">
+            <input type="number" placeholder="Zip Code">
+            <input type="text" placeholder="Question">
+            <p>All fields are required unless marked optional</p>
+        </div>
+        <div class="submit">
+            <input type="submit" value="Submit">
+        </div>
+    </div>
     <script src="https://kit.fontawesome.com/08890b089a.js" crossorigin="anonymous"></script>
 </body>
+
 </html>

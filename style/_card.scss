@@ -69,3 +69,34 @@
     }
     
 }
+.model_window{
+    background-color: $white;
+    padding: 30px;
+    width: 40%;
+    margin: auto;
+    border: 1px solid $light-grey;
+    h3{
+        margin-bottom: 20px;
+    }
+    &-form{
+        @include flex-vertical(flex, null, column, null, null);
+        &-title{
+            @include flex-horizontal(flex, null, space-between);
+        }
+        gap: 10px;
+        input{
+            padding: 10px 0 10px 5px;
+            border: none;
+            background-color: $light-grey;
+        }
+    }
+    .submit{
+        margin-top: 20px;
+    }
+    .submit input{
+        background-color: $dark-blue;
+        padding: 12px 50px;
+        border: none;
+        color: $white;
+    }
+}
